@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit From Celsius</title>
+</head>
+<script>
+    function check_leapyear(){
+        //var cTemp = 100; // temperature in Celsius
+        var cTemp;
+
+        //get the entered year from text box 
+        cTemp = document.getElementById("Temp").value;
+        // Let's be generous with parentheses
+        var hTemp = ((cTemp * 9) /5 ) + 32;
+        document.write("Temperature in Celsius: " + cTemp + " degrees<br/>");
+        document.write("Temperature in Fahrenheit: " + hTemp + " degrees");
+    }
+</script>
+<body>
+    <h3>Javascript Program to convert temperature in Fahrenheit to Celsius</h3>
+    <input type="text" id="Temp"></input>
+    <button onclick="check_leapyear()">Check</button>
+</body>
+
+</html>

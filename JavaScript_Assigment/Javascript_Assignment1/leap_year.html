@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeapYear</title>
+</head>
+<script>
+    function check_leapyear(){
+		//define variables
+		var year;
+ 
+		//get the entered year from text box 
+		year = document.getElementById("year").value;
+ 
+		//three conditions to find out the leap year
+		if( (0 == year % 4) && (0 != year % 100) || (0 == year % 400) )
+		{
+			alert(year+" is a leap year");  
+		}
+		else
+		{
+			alert(year+" is not a leap year");  
+		}
+	}
+</script>
+<body>
+    <h3>Javascript Program to find leap year</h3>
+    <input type="text" id="year"></input>
+    <button onclick="check_leapyear()">Check</button>
+</body>
+</html>
